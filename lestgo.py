@@ -86,8 +86,8 @@ def main():
             chrome_options = Options()
             chrome_options.add_argument(f'--user-agent={user_agent}')
 
-            service = Service('C:\soft\chromedriver2\chromedriver-win64/chromedriver.exe')
-            driver = webdriver.Chrome(service=service, options=chrome_options)
+            service = Service('/Applications/Safari.app')
+            driver = webdriver.Safari(service=service, options=chrome_options)
             driver.maximize_window()
             wait = WebDriverWait(driver, 10)
 
